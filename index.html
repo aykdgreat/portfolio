@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AYKdgreat</title>
+  <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+</head>
+<body id="body">
+  <!--<div class="loading">loading...</div>-->
+  <section class="first" id="about">
+    <header>
+      <div class="name">
+        <h2>AYKdgreat</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" onclick="openNav()">
+        <div class="h-line"></div>
+        <div class="h-line"></div>
+        <div class="h-line"></div>
+      </div>
+      <div class="nav-body" id="nav-body">
+        <h2 class="jump">Click to Jump</h2>
+        <span href="#" class="close-nav" onclick="closeNav()">&times;</span>
+        <a href="#about" onclick="closeNav()">About</a>
+        <a href="#projects" onclick="closeNav()">Projects</a>
+        <a href="#contact" onclick="closeNav()">Get In Touch</a>
+      </div>
+    </header>
+    <div class="container">
+      <b>Hello there,</b>
+      <div class="type">
+        <h1 class="typewriter">Ayokunle says HI<span class="mobile">&#128522;</span><span class="pc">&#128075;</span></h1>
+      </div>
+      <p class="about">
+        I am a young and enthusiastic self-learning web developer presently studying computer science, and for now with just a little real-world programming experience. I'm currently working on becoming better with backend web development where I choose to major, and maybe do Vue frontend. This is in order to get to work on something big with all that I've learnt so far. I look forward to <a href="#contact" class="hearing">hearing from you.</a>
+      </p>
+      <div>
+        <div class="center">
+          <a href="http://github.com/aykdgreat" class="button clearfix">See My Codes &lt;/&gt;</a>
+          <a href="#contact" class="button">Get in touch&#128071;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="second" id="projects">
+    <header>
+      <h2>Sample Personal Projects</h2>
+    </header>
+    <div class="container">
+      <div class="flex">
+        <div class="card">
+          <img src="./img/hero01.jpg" alt="">
+          <div class="card-info">
+            <b>Project name:</b> TCManager<br>
+            <b>Project desc:</b> An easy to use contact manager where tou save your contacts on the web (manually though).<br>
+            <b>With:</b> HTML, CSS, JS<br>
+            <b>What I learned:</b> DOM Manipulation, localStorage, designing a website from scratch (the first project where I got to use what I've learnt), deploying live with <a href="vercel.com">vercel</a> etc.<br>
+            <div class="group-btn">
+              <a href="http://github.com/aykdgreat/tcmanager" class="view">Code</a>
+              <a href="http://tcmanager.vercel.app" class="visit">Visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/hero01.jpg" alt="">
+          <div class="card-info">
+            <b>Project name:</b> HBD Sis Seri<br>
+            <b>Project desc:</b> Birthday shoutout to one of my beloved sisters. This is the first design I ever did after learning html amd css. Took me a whole day then (though the present design is a recent effort)<br>
+            <b>With:</b> HTML, CSS, JS<br>
+            <b>What I learned:</b> Centering an image, card slider, respomsive grid etc.<br>
+            <div class="group-btn">
+              <a href="http://github.com/aykdgreat/hbd-sis-seri" class="view">Code</a>
+              <a href="http://hbd-sis-seri.vercel.app" class="visit">Visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/hero01.jpg" alt="">
+          <div class="card-info">
+            <b>Project name:</b> HBD P Grace<br>
+            <b>Project desc:</b> Birthday shoutout to another beloved sister. Basically same design with #2 but different content<br>
+            <b>With:</b> HTML, CSS, JS<br>
+            <b>What I learned:</b> Centering an image, card slider, respomsive grid etc.<br>
+            <div class="group-btn">
+              <a href="http://github.com/aykdgreat/hbd-pgrace" class="view">Code</a>
+              <a href="http://hbd-pgrace.vercel.app" class="visit">Visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/hero01.jpg" alt="">
+          <div class="card-info">
+            <b>Project name:</b> W/VC Counter<br>
+            <b>Project desc:</b> W Counter tab counts the number of words present in a sentence typed/pasted, V/C counter tab counts the number of vowels and consonants present.<br>
+            <b>With:</b> HTML, CSS, JS<br>
+            <b>What I learned:</b> Creating tabs, implemented a word count funtion not available in JS by default etc.<br>
+            <div class="group-btn">
+              <a href="http://github.com/aykdgreat/wvc-counter" class="view">Code</a>
+              <a href="http://wvc-counter.vercel.app" class="visit">Visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/hero01.jpg" alt="">
+          <div class="card-info">
+            <b>Project name:</b> EasyCalc<br>
+            <b>Project desc:</b> A very basic calculator. Made this without watching any tutorial. <br>
+            <b>With:</b> HTML, CSS, JS<br>
+            <b>What I learned:</b> <br>
+            <div class="group-btn">
+              <a href="http://github.com/aykdgreat/easycalc" class="view">Code</a>
+              <a href="http://easycalc.vercel.app" class="visit">Visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/hero01.jpg" alt="">
+          <div class="card-info">
+            <b>Project name:</b> CGPA Calcufast<br>
+            <b>Project desc:</b> Semester cgpa calculator that computes based on given number of subjects and displays grade point and class.<br>
+            <b>With:</b> HTML, CSS, JS<br>
+            <b>What I learned:</b> <br>
+            <div class="group-btn">
+              <a href="http://github.com/aykdgreat/cgpa-calcufast" class="view">Code</a>
+              <a href="http://cgpa-calcufast.vercel.app" class="visit">Visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/hero01.jpg" alt="">
+          <div class="card-info">
+            <b>Project name:</b> B2dec<br>
+            <b>Project desc:</b> A simple easy to use binary to decimal comverter.<br>
+            <b>With:</b> HTML, CSS, JS<br>
+            <b>What I learned:</b> Decimal to binary conversion with JS.<br>
+            <div class="group-btn">
+              <a href="http://github.com/aykdgreat/b2dec" class="view">Code</a>
+              <a href="http://b2dec.vercel.app" class="visit">Visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/hero01.jpg" alt="">
+          <div class="card-info">
+            <b>Project name:</b> WhenIs<br>
+            <b>Project desc:</b> A platform for keeping record of family, relatives and friends' birthdays on the web.<br>
+            <b>Stack:</b> Frontend, Backend<br>
+            <b>With:</b> HTML, CSS, JS, PHP<br>
+            <b>What I learned:</b> PHP basics, CRUD with PHP, Database manipulation etc.<br>
+            <div class="group-btn">
+              <a href="http://github.com/aykdgreat/whenis" class="view">Code</a>
+              <!--<a href="http://tdmanager.vercel.app" class="visit">Visit</a>-->
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/hero01.jpg" alt="">
+          <div class="card-info">
+            <b>Project name:</b> Blogger<br>
+            <b>Project desc:</b> A blog design copied from <a href="http://w3spaces.com">w3spaces</a> but with incredible functionalities(not static).<br>
+            <b>Stack:</b> Frontend, Backend<br>
+            <b>With:</b> HTML, CSS, PHP<br>
+            <b>What I learned:</b> Responsive web design<br>
+            <div class="group-btn">
+              <a href="http://github.com/aykdgreat/blogger" class="view">Code</a>
+              <!--<a href="http://tdmanager.vercel.app" class="visit">Visit</a>-->
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/hero01.jpg" alt="">
+          <div class="card-info">
+            <b>Project name:</b> Budgter<br>
+            <b>Project desc:</b> Budget manager web app for recording daily expenses and income (still being developed).<br>
+            <b>Stack:</b> Frontend, Backend<br>
+            <b>With:</b> HTML, CSS, PHP<br>
+            <div class="group-btn">
+              <a href="http://github.com/aykdgreat/budget" class="view">Code</a>
+              <!--<a href="http://tdmanager.vercel.app" class="visit">Visit</a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="third" id="contact">
+    <header>
+      <h2>Get In Touch</h2>
+    </header>
+    <div class="container">
+
+      <div class="form">
+        <div class="icons">
+          <a href="http://wa.me/2348136273041"><img src="./img/whatsapp.svg" alt=""></a>
+          <a href="http://twitter.com/ayotobipupo"><img src="./img/twitter.svg" alt=""></a>
+          <a href="http://linkedin.com/dalemo ayokunle"><img src="./img/linkedin.svg" alt=""></a>
+          <a href="http://instagram.com/kunle_lemson"><img src="./img/instagram.svg" alt=""></a>
+          <a href="mailto:/dalemoayokunlephilip@gmail.com"><img src="./img/mail.jpg" alt=""></a>
+        </div>
+        <h3 class="align-heading">Send Me A Message</h3>
+        <form autocomplete="off">
+          <label for="name">Name</label>
+          <input type="text" id="sender-name" class="input-field">
+          <label for="email">Email</label>
+          <input type="email" id="sender-email" class="input-field">
+          <label for="subject">Subject</label>
+          <input type="text" id="message-subject" class="input-field">
+          <label for="message-body">Message body</label>
+          <textarea id="message-body" class="input-textarea"></textarea>
+          <input type="button" value="Send" class="input-submit" id="send">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <button onclick="topFunction()" id="top-btn" title="Go to top" class="to-top"><svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M7 11l5-5m0 0l5 5m-5-5v12"
+      />
+  </svg></button>
+  
+  <script src="eruda.js"></script>
+  <script src="./js/script.js"></script>
+
+</body>
+</html>
