@@ -7,8 +7,14 @@
   <title>AYKdgreat</title>
   <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
 </head>
-<body id="body">
-  <!--<div class="loading">loading...</div>-->
+<body id="body" onload="removeLoader()">
+  <div class="loading" id="loading">
+    <div class="loader-parent">
+      <div class="loader-child"></div>
+    </div>
+    <p>Please wait...</p>
+  </div>
+  <div class="page-content" id="page-content">
   <section class="first" id="about">
     <header>
       <div class="name">
@@ -21,10 +27,10 @@
           <li><a href="#contact">Contact Me</a></li>
         </ul>
       </nav>
-      <div class="hamburger" onclick="openNav()">
-        <div class="h-line"></div>
-        <div class="h-line"></div>
-        <div class="h-line"></div>
+      <div class="menu" onclick="openNav()">
+        <div class="menu-bar"></div>
+        <div class="menu-bar"></div>
+        <div class="menu-bar"></div>
       </div>
       <div class="nav-body" id="nav-body">
         <h2 class="jump">Click to Jump</h2>
@@ -37,15 +43,15 @@
     <div class="container">
       <b>Hello there,</b>
       <div class="type">
-        <h1 class="typewriter">Ayokunle says HI<span class="mobile">&#128522;</span><span class="pc">&#128075;</span></h1>
+        <h1 class="typewriter">Ayokunle says HI<span class="mobile">&#128522;</span><span class="pc"><img src="./img/wave.png" alt=""></span></h1>
       </div>
       <p class="about">
         I am a young and enthusiastic self-learning web developer presently studying computer science, and for now with just a little real-world programming experience. I'm currently working on becoming better with backend web development where I choose to major, and maybe do Vue frontend. This is in order to get to work on something big with all that I've learnt so far. I look forward to <a href="#contact" class="hearing">hearing from you.</a>
       </p>
       <div>
         <div class="center">
-          <a href="http://github.com/aykdgreat" class="button clearfix">See My Codes &lt;/&gt;</a>
-          <a href="#contact" class="button">Get in touch&#128071;</a>
+          <a target="_blank" href="http://github.com/aykdgreat" class="button clearfix">See My Codes</a>
+          <a href="#contact" class="button">Get in touch</a>
         </div>
       </div>
     </div>
@@ -62,10 +68,10 @@
             <b>Project name:</b> TCManager<br>
             <b>Project desc:</b> An easy to use contact manager where tou save your contacts on the web (manually though).<br>
             <b>With:</b> HTML, CSS, JS<br>
-            <b>What I learned:</b> DOM Manipulation, localStorage, designing a website from scratch (the first project where I got to use what I've learnt), deploying live with <a href="vercel.com">vercel</a> etc.<br>
+            <b>What I learned:</b> DOM Manipulation, localStorage, designing a website from scratch (the first project where I got to use what I've learnt), deploying live with <a target="_blank" href="vercel.com">vercel</a> etc.<br>
             <div class="group-btn">
-              <a href="http://github.com/aykdgreat/tcmanager" class="view">Code</a>
-              <a href="http://tcmanager.vercel.app" class="visit">Visit</a>
+              <a target="_blank" href="http://github.com/aykdgreat/tcmanager" class="view">Code</a>
+              <a target="_blank" href="http://tcmanager.vercel.app" class="visit">Visit</a>
             </div>
           </div>
         </div>
@@ -77,8 +83,8 @@
             <b>With:</b> HTML, CSS, JS<br>
             <b>What I learned:</b> Centering an image, card slider, respomsive grid etc.<br>
             <div class="group-btn">
-              <a href="http://github.com/aykdgreat/hbd-sis-seri" class="view">Code</a>
-              <a href="http://hbd-sis-seri.vercel.app" class="visit">Visit</a>
+              <a target="_blank" href="http://github.com/aykdgreat/hbd-sis-seri" class="view">Code</a>
+              <a target="_blank" href="http://hbd-sis-seri.vercel.app" class="visit">Visit</a>
             </div>
           </div>
         </div>
@@ -90,8 +96,8 @@
             <b>With:</b> HTML, CSS, JS<br>
             <b>What I learned:</b> Centering an image, card slider, respomsive grid etc.<br>
             <div class="group-btn">
-              <a href="http://github.com/aykdgreat/hbd-pgrace" class="view">Code</a>
-              <a href="http://hbd-pgrace.vercel.app" class="visit">Visit</a>
+              <a target="_blank" href="http://github.com/aykdgreat/hbd-pgrace" class="view">Code</a>
+              <a target="_blank" href="http://hbd-pgrace.vercel.app" class="visit">Visit</a>
             </div>
           </div>
         </div>
@@ -103,8 +109,8 @@
             <b>With:</b> HTML, CSS, JS<br>
             <b>What I learned:</b> Creating tabs, implemented a word count funtion not available in JS by default etc.<br>
             <div class="group-btn">
-              <a href="http://github.com/aykdgreat/wvc-counter" class="view">Code</a>
-              <a href="http://wvc-counter.vercel.app" class="visit">Visit</a>
+              <a target="_blank" href="http://github.com/aykdgreat/wvc-counter" class="view">Code</a>
+              <a target="_blank" href="http://wvc-counter.vercel.app" class="visit">Visit</a>
             </div>
           </div>
         </div>
@@ -116,8 +122,8 @@
             <b>With:</b> HTML, CSS, JS<br>
             <b>What I learned:</b> <br>
             <div class="group-btn">
-              <a href="http://github.com/aykdgreat/easycalc" class="view">Code</a>
-              <a href="http://easycalc.vercel.app" class="visit">Visit</a>
+              <a target="_blank" href="http://github.com/aykdgreat/easycalc" class="view">Code</a>
+              <a target="_blank" href="http://easycalc.vercel.app" class="visit">Visit</a>
             </div>
           </div>
         </div>
@@ -129,8 +135,8 @@
             <b>With:</b> HTML, CSS, JS<br>
             <b>What I learned:</b> <br>
             <div class="group-btn">
-              <a href="http://github.com/aykdgreat/cgpa-calcufast" class="view">Code</a>
-              <a href="http://cgpa-calcufast.vercel.app" class="visit">Visit</a>
+              <a target="_blank" href="http://github.com/aykdgreat/cgpa-calcufast" class="view">Code</a>
+              <a target="_blank" href="http://cgpa-calcufast.vercel.app" class="visit">Visit</a>
             </div>
           </div>
         </div>
@@ -142,8 +148,8 @@
             <b>With:</b> HTML, CSS, JS<br>
             <b>What I learned:</b> Decimal to binary conversion with JS.<br>
             <div class="group-btn">
-              <a href="http://github.com/aykdgreat/b2dec" class="view">Code</a>
-              <a href="http://b2dec.vercel.app" class="visit">Visit</a>
+              <a target="_blank" href="http://github.com/aykdgreat/b2dec" class="view">Code</a>
+              <a target="_blank" href="http://b2dec.vercel.app" class="visit">Visit</a>
             </div>
           </div>
         </div>
@@ -156,8 +162,8 @@
             <b>With:</b> HTML, CSS, JS, PHP<br>
             <b>What I learned:</b> PHP basics, CRUD with PHP, Database manipulation etc.<br>
             <div class="group-btn">
-              <a href="http://github.com/aykdgreat/whenis" class="view">Code</a>
-              <!--<a href="http://tdmanager.vercel.app" class="visit">Visit</a>-->
+              <a target="_blank" href="http://github.com/aykdgreat/whenis" class="view">Code</a>
+              <!--<a target="_blank" href="http://tdmanager.vercel.app" class="visit">Visit</a>-->
             </div>
           </div>
         </div>
@@ -165,13 +171,13 @@
           <img src="./img/hero01.jpg" alt="">
           <div class="card-info">
             <b>Project name:</b> Blogger<br>
-            <b>Project desc:</b> A blog design copied from <a href="http://w3spaces.com">w3spaces</a> but with incredible functionalities(not static).<br>
+            <b>Project desc:</b> A blog design copied from <a target="_blank" href="http://w3spaces.com">w3spaces</a> but with incredible functionalities(not static).<br>
             <b>Stack:</b> Frontend, Backend<br>
             <b>With:</b> HTML, CSS, PHP<br>
             <b>What I learned:</b> Responsive web design<br>
             <div class="group-btn">
-              <a href="http://github.com/aykdgreat/blogger" class="view">Code</a>
-              <!--<a href="http://tdmanager.vercel.app" class="visit">Visit</a>-->
+              <a target="_blank" href="http://github.com/aykdgreat/blogger" class="view">Code</a>
+              <!--<a target="_blank" href="http://tdmanager.vercel.app" class="visit">Visit</a>-->
             </div>
           </div>
         </div>
@@ -183,8 +189,8 @@
             <b>Stack:</b> Frontend, Backend<br>
             <b>With:</b> HTML, CSS, PHP<br>
             <div class="group-btn">
-              <a href="http://github.com/aykdgreat/budget" class="view">Code</a>
-              <!--<a href="http://tdmanager.vercel.app" class="visit">Visit</a>-->
+              <a  target="_blank" href="http://github.com/aykdgreat/budget" class="view">Code</a>
+              <!--<a target="_blank" href="http://tdmanager.vercel.app" class="visit">Visit</a>-->
             </div>
           </div>
         </div>
@@ -199,23 +205,22 @@
 
       <div class="form">
         <div class="icons">
-          <a href="http://wa.me/2348136273041"><img src="./img/whatsapp.svg" alt=""></a>
-          <a href="http://twitter.com/ayotobipupo"><img src="./img/twitter.svg" alt=""></a>
-          <a href="http://linkedin.com/dalemo ayokunle"><img src="./img/linkedin.svg" alt=""></a>
-          <a href="http://instagram.com/kunle_lemson"><img src="./img/instagram.svg" alt=""></a>
-          <a href="mailto:/dalemoayokunlephilip@gmail.com"><img src="./img/mail.jpg" alt=""></a>
+          <a target="_blank" href="http://twitter.com/ayotobipupo"><img src="./img/twitter.svg" alt=""></a>
+          <a target="_blank" href="http://linkedin.com/in/kunle-lemson"><img src="./img/linkedin.svg" alt=""></a>
+          <a target="_blank" href="http://instagram.com/kunle_lemson"><img src="./img/instagram.svg" alt=""></a>
+          <a target="_blank" href="mailto://dalemoayokunlephilip@gmail.com"><img src="./img/mail.svg" style="width:30px;height:26px;" alt="mail"></a>
         </div>
         <h3 class="align-heading">Send Me A Message</h3>
-        <form autocomplete="off">
+        <form autocomplete="off" action="#" method="POST">
           <label for="name">Name</label>
-          <input type="text" id="sender-name" class="input-field">
+          <input type="text" id="sender-name" class="input-field" name="sender-name">
           <label for="email">Email</label>
-          <input type="email" id="sender-email" class="input-field">
+          <input type="email" id="sender-email" class="input-field" name="sender-email">
           <label for="subject">Subject</label>
-          <input type="text" id="message-subject" class="input-field">
+          <input type="text" id="message-subject" class="input-field" name="message-subject">
           <label for="message-body">Message body</label>
-          <textarea id="message-body" class="input-textarea"></textarea>
-          <input type="button" value="Send" class="input-submit" id="send">
+          <textarea id="message-body" class="input-textarea" name="message-body"></textarea>
+          <button class="input-submit" id="send">Send</button>
         </form>
       </div>
     </div>
@@ -234,7 +239,7 @@
       d="M7 11l5-5m0 0l5 5m-5-5v12"
       />
   </svg></button>
-  
+</div>
   <script src="eruda.js"></script>
   <script src="./js/script.js"></script>
 
