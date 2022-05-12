@@ -10,18 +10,18 @@ html {
 
 body {
   position: relative;
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .loading {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100vw;
   z-index: 999;
   height: 100vh;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,8 +40,8 @@ body {
   border-top: 5px solid #fff;
   border-bottom: 5px solid #fff;
   margin-bottom: 10px;
-  
-  animation: loader .65s linear infinite;
+
+  animation: loader 0.65s linear infinite;
 }
 
 .page-content {
@@ -56,36 +56,40 @@ section {
   background-color: red;
 }
 
-.first, .second, .third {
+.first,
+.second,
+.third {
   position: relative;
-  background: url('../img/hero01.jpg');
+  background: url("../img/hero01.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .second {
-  background: url('../img/hero04.jpg');
+  background: url("../img/hero04.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .third {
-  background: url('../img/hero03.jpg');
+  background: url("../img/hero03.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.first::before, .second::before, .third::before {
+.first::before,
+.second::before,
+.third::before {
   content: "";
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 header {
@@ -143,7 +147,7 @@ li a:hover {
   height: 4px;
   background-color: #fff;
   margin: 5px 0;
-  box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .nav-body {
@@ -151,11 +155,11 @@ li a:hover {
   z-index: 100;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   height: 100%;
   width: 0;
   overflow-y: hidden;
-  transition: .5s;
+  transition: 0.5s;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -174,10 +178,11 @@ li a:hover {
   padding: 15px 10px;
   text-decoration: none;
   color: #818181;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.nav-body a:hover, .nav-body a:active {
+.nav-body a:hover,
+.nav-body a:active {
   color: #f1f1f1;
 }
 
@@ -213,9 +218,8 @@ li a:hover {
   border-right: 5px solid teal;
   width: 0;
   white-space: nowrap;
-  animation:
-  typing 3s steps(20, end) forwards, blink .8s infinite;
-  animation-delay: 1.s;
+  animation: typing 3s steps(20, end) forwards, blink 0.8s infinite;
+  animation-delay: 1s;
 }
 
 .pc {
@@ -229,7 +233,7 @@ li a:hover {
 
 .hearing {
   color: #fff;
-  background-color: rgba(255,0,0,.3);
+  background-color: rgba(255, 0, 0, 0.3);
   padding: 3px;
 }
 
@@ -246,8 +250,8 @@ li a:hover {
 }
 
 .button:hover {
-  background-color: rgba(0,0,0,.85);
-  transition: background-color .5s;
+  background-color: rgba(0, 0, 0, 0.85);
+  transition: background-color 0.5s;
 }
 
 .clearfix::after {
@@ -261,7 +265,7 @@ li a:hover {
   overflow: hidden;
   width: 100%;
   padding: 25px 0;
-  
+
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -287,7 +291,6 @@ li a:hover {
   scroll-snap-align: center;
   background-color: #fff;
   width: 250px;
-  /* height: 425px; */
   border-radius: 20px;
   margin-right: 20px;
   flex-shrink: 0;
@@ -295,14 +298,14 @@ li a:hover {
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,.5), 0 6px 20px 0 rgba(0,0,0,.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card::before {
   content: counter(card-number);
   position: absolute;
   text-align: center;
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
   font-weight: bold;
   font-size: 20px;
@@ -325,13 +328,13 @@ li a:hover {
 }
 
 .group-btn {
-  
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.view, .visit {
+.view,
+.visit {
   padding: 5px;
   text-transform: uppercase;
   text-align: center;
@@ -344,10 +347,11 @@ li a:hover {
   margin: 5px;
 }
 
-.view:hover, .visit:hover {
+.view:hover,
+.visit:hover {
   background-color: #008080;
   color: #fff;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .form {
@@ -357,7 +361,7 @@ li a:hover {
   padding: 20px;
   color: #000;
   text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,.5), 0 6px 20px 0 rgba(0,0,0,.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .icons {
@@ -385,7 +389,7 @@ label {
   border: 1px solid #008080;
 }
 
-.input-textarea  {
+.input-textarea {
   width: 100%;
   height: 100px;
   display: block;
@@ -433,77 +437,81 @@ label {
 
 .to-top:hover {
   background-color: #555;
-  /* Add a dark-grey background on hover */
 }
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
   to {
-    width: 100%
+    width: 100%;
   }
 }
 
 @keyframes blink {
   from {
-    border-color: transparent
+    border-color: transparent;
   }
   to {
     border-color: teal;
   }
 }
 
-@keyframes animatecontent { 
-  from{ bottom:-100vh; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+@keyframes animatecontent {
+  from {
+    bottom: -100vh;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes loader {
   0% {
     transform: rotate(0deg);
   }
-  
+
   100% {
     transform: rotate(360deg);
   }
 }
 
-@media(min-width: 700px) {
+@media (min-width: 700px) {
   header {
     padding: 20px 100px;
   }
-  
+
   .first .container {
     font-size: 20px;
-    /* padding: 150px; */
     max-width: 60%;
   }
-  
+
   nav {
     display: block;
   }
 
-  .hamburger {
+  .menu {
     display: none;
   }
 
   .mobile {
     display: none;
   }
-.pc {
-  display: inline;
-}
+  
+  .pc {
+    display: inline;
+  }
+  
   .pc img {
     display: inline-block;
-width: 35px;
-height: 35px;
-vertical-align: middle;
-    
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
   }
 
   .button {
-    display: inline-block;
     float: left;
     margin-right: 30px;
     padding: 20px;
